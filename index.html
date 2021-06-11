@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>弹幕实验室</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js"
+        integrity="sha512-GZ1RIgZaSc8rnco/8CXfRdCpDxRCphenIiZ2ztLy3XQfCbQUSCuk8IudvNHxkRA3oUg6q0qejgN/qqyG1duv5Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="bundle.js"></script>
+</head>
+
+<body>
+    <nav>
+        <span>
+            弹幕实验室 - 1.0.0 Beta
+        </span>
+        <span>
+            <button>弹幕文档（编写中）</button>
+        </span>
+    </nav>
+    <main>
+        <div class="card edit">
+            <div class="card-title">
+                <span>
+                    弹幕编辑
+                </span>
+                <span>
+                    <button onclick="a.reset();start()">运行</button>
+                </span>
+            </div>
+            <div class="card-content">
+<pre id="editor">
+[
+
+]
+</pre>
+            </div>
+        </div>
+        <div class="card run">
+            <div class="card-title">
+                <span>运行时间:<span id="time"></span></span>
+                <span>
+                    <button onclick="stageBgc()">背景</button>
+                    <button onclick="a.skip(0)">重置时间</button>
+                    <button onclick="play()">播放/暂停</button>
+                </span>
+            </div>
+            <div class="card-content" id="stage">
+            </div>
+        </div>
+    </main>
+</body>
+<script>
+    var editor = ace.edit("editor");
+    editor.session.setMode("ace/mode/json");
+
+
+
+    var time = document.getElementById("time")
+    var a = new MfunsDanMaku()
+    var stage = document.getElementById("stage")
+    a.main({
+        containers: stage,
+        danmaku: (send) => {
+            send(editor.getValue())
+        }
+    })
+    var dark = false
+    function stageBgc() {
+        if (dark) {
+            stage.style.backgroundColor = "#fff"
+        } else {
+            stage.style.backgroundColor = "#000"
+        }
+        dark = !dark
+    }
+    var isPlay = false
+    function play() {
+        if (isPlay) {
+            a.pause();
+        } else {
+            a.start()
+        }
+        isPlay = !isPlay
+    }
+    function start() {
+        isPlay = true;
+        a.start()
+    }
+    setInterval(() => { time.innerHTML = a.time() }, 64)
+    function getQueryVariable(variable) {
+        var query = window.location.search.substring(1);
+        var vars = query.split("&");
+        for (var i = 0; i < vars.length; i++) {
+            var pair = vars[i].split("=");
+            if (pair[0] == variable) { return pair[1]; }
+        }
+        return (false);
+    }
+
+    // 根据参数获取demo
+    var id = getQueryVariable("id");
+    if (!id) {
+        id = "demo"
+    }
+
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "demo/" + id + ".json");
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState == 4 && xhr.status == 200) {
+            editor.setValue(xhr.responseText);
+        }
+    };
+    xhr.send()
+</script>
+
+</html>
