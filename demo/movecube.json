@@ -1,0 +1,24 @@
+[
+    {
+        "type":"text",
+        "start":0,
+        "content":"",
+        "style":{
+            "width":"100px",
+            "height":"100px",
+            "backgroundColor":"red"
+        },
+        "animations": [
+            {
+                "type":"translate",
+                "duration": 3000,
+                "path":{
+                    "x1":100,
+                    "y1":100,
+                    "x2":1000,
+                    "y2":600
+                }
+            }
+        ]
+    }
+]

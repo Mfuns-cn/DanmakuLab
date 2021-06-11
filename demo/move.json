@@ -1,0 +1,23 @@
+[
+    {
+        "type":"text",
+        "start":0,
+        "content":"这是一段40像素的红色文本",
+        "style":{
+            "fontSize":"40px",
+            "color":"red"
+        },
+        "animations": [
+            {
+                "type":"translate",
+                "duration": 3000,
+                "path":{
+                    "x1":100,
+                    "y1":100,
+                    "x2":1000,
+                    "y2":600
+                }
+            }
+        ]
+    }
+]

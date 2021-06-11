@@ -16,7 +16,7 @@
 <body>
     <nav>
         <span>
-            弹幕实验室 - 1.0.1 Beta
+            弹幕实验室 - 1.0.2 Beta
         </span>
         <span>
             <button>弹幕文档</button>
@@ -46,7 +46,7 @@
                 <span>
                     <button onclick="stageBgc()">背景</button>
                     <button onclick="a.skip(0)">重置</button>
-                    <button onclick="play()">播放暂停</button>
+                    <button id="play" onclick="play()">播放</button>
                 </span>
             </div>
             <div class="card-content" id="stage">
@@ -79,11 +79,14 @@
         dark = !dark
     }
     var isPlay = false
+    var playObj = document.getElementById("play")
     function play() {
         if (isPlay) {
             a.pause();
+            playObj.innerHTML = "播放"
         } else {
             a.start()
+            playObj.innerHTML = "暂停"
         }
         isPlay = !isPlay
     }

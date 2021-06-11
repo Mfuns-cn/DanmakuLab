@@ -1,0 +1,229 @@
+[
+    {
+        "type": "text",
+        "start": 0,
+        "content": "",
+        "style": {
+            "width": "100px",
+            "height": "100px"
+        },
+        "animations": [
+            {
+                "type":"group",
+                "animations":[
+                    {
+                        "duration": 10000,
+                        "type": "translate",
+                        "path": {
+                            "x1":400,
+                            "y1": 400,
+                            "x2":800,
+                            "y2": 800
+                        }
+                    },
+                    {
+                        "type": "rotateY",
+                        "duration": 10000,
+                        "angle":{
+                            "end":900
+                        }
+                    },
+                    {
+                        "type":"scale",
+                        "duration": 10000,
+                        "scale":{
+                            "x2":3,
+                            "y2":3,
+                            "z2":3
+                        }
+                    }
+                ]
+            }
+        ],
+        "childs": [
+            {
+                "type": "text",
+                "start": 0,
+                "content": "",
+                "style": {
+                    "backgroundColor": "red",
+                    "width": "100px",
+                    "height": "100px"
+                },
+                "animations": [
+                    {
+                        "type": "group",
+                        "animations": [
+                            {
+                                "type": "translate",
+                                "duration": 10000,
+                                "path": {
+                                    "z1":50,
+                                    "z2":50
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "text",
+                "start": 0,
+                "content": "",
+                "style": {
+                    "backgroundColor": "blue",
+                    "width": "100px",
+                    "height": "100px"
+                },
+                "animations": [
+                    {
+                        "type": "group",
+                        "animations": [
+                            {
+                                "type": "translate",
+                                "duration": 10000,
+                                "path": {
+                                    "z1":-50,
+                                    "z2": -50
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "text",
+                "start": 0,
+                "content": "",
+                "style": {
+                    "backgroundColor": "yellow",
+                    "width": "100px",
+                    "height": "100px"
+                },
+                "animations": [
+                    {
+                        "type": "group",
+                        "animations": [
+                            {
+                                "type": "rotateY",
+                                "duration": 10000,
+                                "angle": {
+                                    "start": 90,
+                                    "end": 90
+                                }
+                            },
+                            {
+                                "type": "translate",
+                                "duration": 10000,
+                                "path": {
+                                    "z1":50,
+                                    "z2": 50
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "text",
+                "start": 0,
+                "content": "",
+                "style": {
+                    "backgroundColor": "green",
+                    "width": "100px",
+                    "height": "100px"
+                },
+                "animations": [
+                    {
+                        "type": "group",
+                        "animations": [
+                            {
+                                "type": "rotateY",
+                                "duration": 10000,
+                                "angle": {
+                                    "start": 90,
+                                    "end": 90
+                                }
+                            },
+                            {
+                                "type": "translate",
+                                "duration": 10000,
+                                "path": {
+                                    "z1":-50,
+                                    "z2": -50
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "text",
+                "start": 0,
+                "content": "",
+                "style": {
+                    "backgroundColor": "pink",
+                    "width": "100px",
+                    "height": "100px"
+                },
+                "animations": [
+                    {
+                        "type": "group",
+                        "animations": [
+                            {
+                                "type": "rotateX",
+                                "duration": 10000,
+                                "angle": {
+                                    "start": 90,
+                                    "end": 90
+                                }
+                            },
+                            {
+                                "type": "translate",
+                                "duration": 10000,
+                                "path": {
+                                    "z1":-50,
+                                    "z2": -50
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "text",
+                "start": 0,
+                "content": "",
+                "style": {
+                    "backgroundColor": "#666",
+                    "width": "100px",
+                    "height": "100px"
+                },
+                "animations": [
+                    {
+                        "type": "group",
+                        "animations": [
+                            {
+                                "type": "rotateX",
+                                "duration": 10000,
+                                "angle": {
+                                    "start": 90,
+                                    "end": 90
+                                }
+                            },
+                            {
+                                "type": "translate",
+                                "duration": 10000,
+                                "path": {
+                                    "z1":50,
+                                    "z2": 50
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+            
+        ]
+    }
+]
