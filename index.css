@@ -64,6 +64,12 @@ nav{
     right: 0;
     left: 0;
   }
+
+.stage{
+    /* background-color: #333; */
+    /* outline: 1px solid #333; */
+    box-shadow: 1px 1px 5px #999;
+}
 @media only screen and (min-width: 700px) {
     main{
         display: flex;
