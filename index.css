@@ -8,7 +8,7 @@ body{
     background-color: #eee;
     color: #333;
 }
-button,.btn{
+button, .btn{
     border: none;
     background-color: rgb(123, 127, 247);
     color: white;
@@ -16,6 +16,7 @@ button,.btn{
     padding: 6px 20px; 
     margin-left: 10px;
     transition:background-color  0.3s;
+    text-decoration: none;
 }
 button:hover{
     background-color: rgb(64, 67, 161);

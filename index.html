@@ -16,10 +16,10 @@
 <body>
     <nav>
         <span>
-            弹幕实验室 - 1.0.2 Beta
+            弹幕实验室 - 1.1.0 Beta
         </span>
         <span>
-            <button>弹幕文档</button>
+            <a href="https://meogirl.ml/2021/06/11/danmaku/Mfuns%E5%BC%B9%E5%B9%95%E6%89%8B%E5%86%8C/" class="btn">文档</a>
         </span>
     </nav>
     <main>
@@ -92,6 +92,7 @@
     }
     function start() {
         isPlay = true;
+        playObj.innerHTML = "暂停"
         a.start()
     }
     setInterval(() => { time.innerHTML = a.time()/1000 }, 64)
