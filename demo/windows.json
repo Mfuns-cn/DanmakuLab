@@ -1,0 +1,101 @@
+[
+    {
+        "style":{
+            "width":"800px",
+            "height":"500px",
+            "backgroundColor":"rgb(240,240,240)",
+            "border":"4px outset #ddd",
+            "margin":"auto",
+            "top":0,
+            "bottom":0,
+            "left":0,
+            "right":0,
+            "color":"#fff",
+            "fontFamily":"宋体",
+            "fontSize":"40px"
+        },
+        "childs":[
+            {
+                "content":"Windows 窗体",
+                "style":{
+                    "width":"100%",
+                    "height":"50px",
+                    "backgroundColor":"blue",
+                    "padding":"0px 10px"
+                },
+                "childs":[
+                     {
+                         "content":"X",
+                         "style":{
+                             "top":"5px",
+                             "right":"10px",
+                             "border":"4px outset red",
+                             "backgroundColor":"red",
+                             "fontSize":"30px",
+                             "padding":"0px 8px"
+                         }
+                         
+                     },
+                     {
+                         "content":"O",
+                         "style":{
+                             "top":"5px",
+                             "right":"60px",
+                             "border":"4px outset #666",
+                             "backgroundColor":"#555",
+                             "fontSize":"30px",
+                             "padding":"0px 8px"
+                         }
+                         
+                     },
+                     {
+                         "content":"_",
+                         "style":{
+                             "top":"5px",
+                             "right":"110px",
+                             "border":"4px outset #666",
+                             "backgroundColor":"#555",
+                             "fontSize":"30px",
+                             "padding":"0px 8px"
+                         }
+                         
+                     } 
+                 ]
+            },
+            {
+                "content":"这是一些内容",
+                "style":{
+                     "color":"#333",
+                     "width":"40%",
+                     "height":"70%",
+                     "border":"4px inset #ddd",
+                     "backgroundColor":"#fff",
+                     "top":"80px",
+                     "left":"30px"
+                }
+            },
+            {
+                "content":"确定",
+                "style":{
+                    "backgroundColor":"rgb(240,240,240)",
+                    "border":"4px outset #ddd",
+                    "color":"#000",
+                    "padding":"5px 40px",
+                    "right":"30px",
+                    "top":"80px"
+                }
+            },
+            {
+                "content":"取消",
+                "style":{
+                    "backgroundColor":"rgb(240,240,240)",
+                    "border":"4px outset #ddd",
+                    "color":"#000",
+                    "padding":"5px 40px",
+                    "right":"30px",
+                    "top":"160px"
+                }
+            }
+         ]
+    }
+ ]
