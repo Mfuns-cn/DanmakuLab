@@ -65,7 +65,7 @@
     var a = new MfunsDanMaku({
         containers: stage,
         danmaku: (send) => {
-            send(editor.getValue())
+            send([editor.getValue()])
         }
     })
     var dark = false
