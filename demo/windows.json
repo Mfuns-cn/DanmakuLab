@@ -14,6 +14,12 @@
             "fontFamily":"宋体",
             "fontSize":"40px"
         },
+        "animations":[
+            {
+                "type":"static",
+                "duration": 10000
+            }
+        ],
         "childs":[
             {
                 "content":"Windows 窗体",
@@ -23,9 +29,21 @@
                     "backgroundColor":"blue",
                     "padding":"0px 10px"
                 },
+                 "animations":[
+                    {
+                    "type":"static",
+                    "duration": 10000
+                    }
+                ],
                 "childs":[
                      {
                          "content":"X",
+                          "animations":[
+                    {
+                    "type":"static",
+                    "duration": 10000
+                    }
+                ],
                          "style":{
                              "top":"5px",
                              "right":"10px",
@@ -38,6 +56,12 @@
                      },
                      {
                          "content":"O",
+                         "animations":[
+                            {
+                            "type":"static",
+                            "duration": 10000
+                            }
+                        ],
                          "style":{
                              "top":"5px",
                              "right":"60px",
@@ -50,6 +74,12 @@
                      },
                      {
                          "content":"_",
+                         "animations":[
+                            {
+                            "type":"static",
+                            "duration": 10000
+                            }
+                        ],
                          "style":{
                              "top":"5px",
                              "right":"110px",
@@ -64,6 +94,12 @@
             },
             {
                 "content":"这是一些内容",
+                 "animations":[
+                    {
+                    "type":"static",
+                    "duration": 10000
+                    }
+                ],
                 "style":{
                      "color":"#333",
                      "width":"40%",
@@ -76,6 +112,12 @@
             },
             {
                 "content":"确定",
+                 "animations":[
+                    {
+                    "type":"static",
+                    "duration": 10000
+                    }
+                ],
                 "style":{
                     "backgroundColor":"rgb(240,240,240)",
                     "border":"4px outset #ddd",
@@ -87,6 +129,12 @@
             },
             {
                 "content":"取消",
+                 "animations":[
+                    {
+                    "type":"static",
+                    "duration": 10000
+                    }
+                ],
                 "style":{
                     "backgroundColor":"rgb(240,240,240)",
                     "border":"4px outset #ddd",
