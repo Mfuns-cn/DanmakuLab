@@ -1,0 +1,167 @@
+[
+    {
+        "style": {
+            "left": "700px",
+            "top": "100px"
+        },
+        "childs": [
+            {
+                "content": "と",
+                "style": {
+                    "top": "16px",
+                    "left": "275px",
+                    "fontSize": "145px",
+                    "fontFamily": "宋体",
+                    "color": "#fc8643",
+                    "padding": "-10px"
+                }
+            },
+            {
+                "content": "あ",
+                "style": {
+                    "top": "140px",
+                    "left": "311px",
+                    "fontSize": "110px",
+                    "fontFamily": "宋体",
+                    "color": "#fc8643"
+                }
+            },
+            {
+                "content": "る",
+                "style": {
+                    "top": "193px",
+                    "left": "257px",
+                    "fontSize": "89px",
+                    "fontFamily": "宋体",
+                    "color": "#fc8643"
+                }
+            },
+            {
+                "content": "科",
+                "style": {
+                    "top": "260px",
+                    "left": "263px",
+                    "fontSize": "168px",
+                    "fontFamily": "宋体",
+                    "color": "#eb5a33"
+                }
+            },
+            {
+                "content": "学",
+                "style": {
+                    "top": "411px",
+                    "left": "263px",
+                    "fontSize": "168px",
+                    "fontFamily": "宋体",
+                    "color": "#e8342b"
+                }
+            },
+            {
+                "content": "の",
+                "style": {
+                    "top": "552px",
+                    "left": "263px",
+                    "fontSize": "168px",
+                    "fontFamily": "宋体",
+                    "color": "#e61123"
+                }
+            },
+            {
+                "style": {
+                    "top": "173px",
+                    "left": "84px",
+                    "fontSize": "168px",
+                    "fontFamily": "宋体",
+                    "backgroundImage": "linear-gradient(45deg, rgb(233,51,41), rgb(238,122,48))",
+                    "width": "171px",
+                    "height": "171px"
+                }
+            },
+            {
+                "content": "超",
+                "style": {
+                    "top": "173px",
+                    "left": "95px",
+                    "fontSize": "150px",
+                    "fontFamily": "宋体",
+                    "color": "#fff"
+                }
+            },
+            {
+                "content": "電",
+                "style": {
+                    "top": "345px",
+                    "left": "140px",
+                    "fontSize": "130px",
+                    "fontFamily": "宋体",
+                    "color": "#ea3529"
+                }
+            },
+            {
+                "content": "磁",
+                "style": {
+                    "top": "460px",
+                    "left": "120px",
+                    "fontSize": "160px",
+                    "fontFamily": "宋体",
+                    "color": "#e71f26"
+                }
+            },
+            {
+                "content": "砲",
+                "style": {
+                    "top": "600px",
+                    "left": "84px",
+                    "fontSize": "192px",
+                    "fontFamily": "宋体",
+                    "color": "#e50722"
+                }
+            },
+            {
+                "content": "レ",
+                "style": {
+                    "top": "360px",
+                    "left": "93px",
+                    "fontSize": "27px",
+                    "color": "#e50722"
+                }
+            },
+            {
+                "content": "ー",
+                "style": {
+                    "top": "410px",
+                    "left": "93px",
+                    "fontSize": "27px",
+                    "color": "#e50722"
+                }
+            },
+            {
+                "content": "ル",
+                "style": {
+                    "top": "460px",
+                    "left": "93px",
+                    "fontSize": "27px",
+                    "color": "#e50722"
+                }
+            },
+            {
+                "content": "ガ",
+                "style": {
+                    "top": "510px",
+                    "left": "93px",
+                    "fontSize": "27px",
+                    "color": "#e50722"
+                }
+            },
+            {
+                "content": "ン",
+                "style": {
+                    "top": "560px",
+                    "left": "93px",
+                    "fontSize": "27px",
+                    "color": "#e50722"
+                }
+            }
+        ]
+    }
+]
