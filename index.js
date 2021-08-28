@@ -64,20 +64,25 @@ function getQueryVariable(variable) {
 
 // 根据参数获取demo
 var id = getQueryVariable("id");
-if (!id) {
-  id = "demo";
+if (id) {
+  var xhr = new XMLHttpRequest();
+  xhr.open("GET", "demo/" + id + ".json");
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState == 4 && xhr.status == 200) {
+      editor.setValue(xhr.responseText);
+    } else {
+      editor.setValue("[\r\n\r\n]");
+    }
+  };
+  xhr.send();
+} else {
+  editor.setValue("{}");
 }
 
-var xhr = new XMLHttpRequest();
-xhr.open("GET", "demo/" + id + ".json");
-xhr.onreadystatechange = function () {
-  if (xhr.readyState == 4 && xhr.status == 200) {
-    editor.setValue(xhr.responseText);
-  } else {
-    editor.setValue("[\r\n\r\n]");
-  }
-};
-xhr.send();
+// 定时保存
+setInterval(() => {
+  // editor.
+}, 1000);
 
 //全屏播放
 function fill() {
